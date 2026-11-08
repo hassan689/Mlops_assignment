@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "count": {
+      "ai": 539,
+      "real": 435
+    },
+    "width_min": {
+      "ai": 225,
+      "real": 183
+    },
+    "width_med": {
+      "ai": 1024.0,
+      "real": 940.0
+    },
+    "width_max": {
+      "ai": 6000,
+      "real": 8495
+    },
+    "height_min": {
+      "ai": 135,
+      "real": 158
+    },
+    "height_med": {
+      "ai": 800.0,
+      "real": 720.0
+    },
+    "height_max": {
+      "ai": 4001,
+      "real": 7091
+    },
+    "size_min": {
+      "ai": 11738,
+      "real": 11311
+    },
+    "size_med": {
+      "ai": 199760.0,
+      "real": 144982.0
+    },
+    "size_max": {
+      "ai": 5626183,
+      "real": 10195352
+    }
+  },
+  "corrupt": [],
+  "n_duplicates": 2
+}

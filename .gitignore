@@ -24,11 +24,12 @@ AiArtData/
 RealArt/
 *.zip
 
-# Artifacts
-artifacts/*.csv
+# Artifacts — generated figures are ignored, but audit evidence is committed
 artifacts/figures/*.png
 !artifacts/.gitkeep
-
+!artifacts/audit.csv
+!artifacts/audit_summary.json
+!artifacts/duplicates.csv
 # OS / IDE
 .DS_Store
 Thumbs.db
