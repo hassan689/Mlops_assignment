@@ -1,0 +1,6 @@
+:root { font-family: Arial, sans-serif; color: #172033; background: #eef2f7; }
+body { margin: 0; } nav { background: #172033; padding: 1rem 2rem; } nav a { color: white; margin-right: 1.5rem; text-decoration: none; }
+.card { max-width: 720px; margin: 3rem auto; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 18px #0001; }
+label, input, button { display: block; margin: .8rem 0; } input { padding: .6rem; } button, .button { background: #2563eb; color: white; border: 0; border-radius: 6px; padding: .7rem 1rem; text-decoration: none; cursor: pointer; }
+.error { color: #a61b1b; background: #fee2e2; padding: .8rem; border-radius: 6px; } .caveat { color: #5d6573; } .verdict { font-size: 2rem; font-weight: bold; color: #2563eb; }
+table { width: 100%; border-collapse: collapse; } th, td { padding: .6rem; border-bottom: 1px solid #ddd; text-align: left; }

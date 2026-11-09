@@ -1,0 +1,1 @@
+"""VisionGuard Flask application package."""

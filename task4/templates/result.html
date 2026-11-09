@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Result - VisionGuard</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+<nav><a href="{{ url_for('upload') }}">Upload</a><a href="{{ url_for('history') }}">History</a><a href="{{ url_for('health') }}">Health</a></nav>
+<main class="card"><h1>Prediction result</h1><p><strong>File:</strong> {{ filename }}</p>
+<p class="verdict">{{ verdict|upper }}</p><p><strong>Confidence:</strong> {{ confidence }}</p>
+<p class="caveat">{{ caveat }}</p><a class="button" href="{{ url_for('upload') }}">Analyze another image</a></main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>History - VisionGuard</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+<nav><a href="{{ url_for('upload') }}">Upload</a><a href="{{ url_for('history') }}">History</a><a href="{{ url_for('health') }}">Health</a></nav>
+<main class="card"><h1>Prediction history</h1>
+<p>Every completed search is permanently recorded in SQLite.</p>
+{% if error %}<p class="error" role="alert">{{ error }}</p>{% endif %}
+{% if predictions %}<table><tr><th>File</th><th>Decision</th><th>Confidence</th><th>Model</th><th>Time (UTC)</th></tr>
+{% for filename, verdict, confidence, model, created_at in predictions %}<tr><td>{{ filename }}</td><td>{{ verdict }}</td><td>{{ "%.1f%%"|format(confidence * 100) }}</td><td>{{ model }}</td><td>{{ created_at }}</td></tr>{% endfor %}</table>
+{% else %}<p>No predictions yet.</p>{% endif %}</main>
+</body>
+</html>
